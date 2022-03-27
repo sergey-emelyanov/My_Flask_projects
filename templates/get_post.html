@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}POST {{articl.title}}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>{{articl.title}}</h1>
+    <h2>{{articl.intro}}</h2>
+    <h4>{{articl.main}}</h4>
+    <a href="/posts/{{ articl.id }}/del" class="btn btn-danger">Удалить статью</a>
+    <a href="/posts/{{ articl.id }}/update" class="btn btn-warning">Обновить статью</a>
+    <a href="/home" class="btn btn-success">На главную</a>
+
+
+</div>
+{% endblock %}
